@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional developer portfolio of Kevin Samara Saeed Wasef, Freelance Web Developer specializing in business websites, tourism platforms, restaurant websites, digital menus, and custom web solutions.">
+    <meta name="keywords"
+        content="Kevin Samara, Kevin Samara Saeed Wasef, Freelance Web Developer, Hurghada, Egypt, Web Developer Egypt, Tourism websites, Restaurant websites, Digital menus, Custom web solutions, HTML, CSS, JavaScript, Netlify">
+    <meta name="author" content="Kevin Samara Saeed Wasef">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kevin Samara | Freelance Web Developer">
+    <meta property="og:description"
+        content="Computer Science & Artificial Intelligence student passionate about building modern, responsive, and user-friendly websites that help businesses grow online.">
+    <meta property="og:image" content="images/profile.webp">
+
+    <title>Kevin Samara Saeed Wasef | Freelance Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="logoLink">
+                <span class="logo-accent">&lt;</span>Kevin<span class="logo-accent">.S &gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Open mobile menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-padding">
+            <div class="container hero-grid">
+                <div class="hero-content fade-in-left">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        Available for Freelance Projects
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Kevin Samara</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Freelance Web Developer</h2>
+                    <p class="hero-text">
+                        Computer Science & Artificial Intelligence student passionate about building modern, responsive,
+                        and user-friendly websites that help businesses grow online. Specializing in high-performance
+                        local business, tourism, and restaurant solutions.
+                    </p>
+
+                    <div class="hero-meta">
+                        <div class="meta-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Hurghada, Egypt</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>CS & AI Student</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Get In Touch</span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper fade-in-right">
+                    <div class="profile-glow"></div>
+                    <div class="profile-image-container">
+                        <img src="images/profile.webp" alt="Kevin Samara Saeed Wasef Profile" class="profile-img"
+                            onerror="this.src='https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop'">
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fa-solid fa-code text-cyan"></i>
+                        <div>
+                            <h4>Web Dev</h4>
+                            <p>Freelancer</p>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa-solid fa-brain text-purple"></i>
+                        <div>
+                            <h4>AI & CS</h4>
+                            <p>3rd Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about section-padding bg-alt">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Who Is Kevin?</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info fade-in-left">
+                        <h3 class="about-subtitle">Translating Code into Business Solutions</h3>
+                        <p class="about-desc">
+                            I am a Computer Science and Artificial Intelligence student with a passion for web
+                            development and digital solutions. I specialize in creating modern, responsive, and
+                            user-friendly websites that help businesses establish a professional online presence.
+                        </p>
+                        <p class="about-desc">
+                            My focus is on delivering practical, high-impact web solutions for <strong>restaurants,
+                                cafés, tourism companies, travel agencies</strong>, and other local businesses looking
+                            to expand their reach.
+                        </p>
+                        <p class="about-desc">
+                            I have developed real-world projects including custom tourism booking platforms and fitness
+                            applications featuring user authentication, data storage, calorie tracking systems, WhatsApp
+                            integration, and optimized mobile interfaces. My goal is to continuously improve as a
+                            professional web developer while helping businesses attract more customers through
+                            high-quality digital experiences.
+                        </p>
+                    </div>
+
+                    <div class="about-cards fade-in-right">
+                        <!-- Education Card -->
+                        <div class="about-card">
+                            <div class="card-icon-wrapper">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="card-details">
+                                <h3>Education</h3>
+                                <p class="card-bold">B.Sc. in Computer Science & AI</p>
+                                <p class="card-text">Qena National University</p>
+                                <div class="card-footer-info">
+                                    <span>3rd Year Student</span>
+                                    <span class="badge-gpa">GPA: 3.22</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Languages Card -->
+                        <div class="about-card">
+                            <div class="card-icon-wrapper">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+                            <div class="card-details">
+                                <h3>Languages</h3>
+                                <div class="language-list">
+                                    <div class="lang-item">
+                                        <span class="lang-name">Arabic</span>
+                                        <span class="lang-level">Native</span>
+                                    </div>
+                                    <div class="lang-item">
+                                        <span class="lang-name">English</span>
+                                        <span class="lang-level">Working Proficiency</span>
+                                    </div>
+                                    <div class="lang-item">
+                                        <span class="lang-name">French</span>
+                                        <span class="lang-level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location & Info Card -->
+                        <div class="about-card">
+                            <div class="card-icon-wrapper">
+                                <i class="fa-solid fa-earth-africa"></i>
+                            </div>
+                            <div class="card-details">
+                                <h3>Location</h3>
+                                <p class="card-bold">Hurghada, Egypt</p>
+                                <p class="card-text">Ready to collaborate globally & locally in the Red Sea hub.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-tag">My Toolkit</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Frontend Development -->
+                    <div class="skills-card fade-in-up">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-laptop-code text-cyan"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fa-brands fa-html5 text-orange"></i> HTML5</li>
+                            <li><i class="fa-brands fa-css3-alt text-blue"></i> CSS3</li>
+                            <li><i class="fa-brands fa-js text-yellow"></i> JavaScript</li>
+                            <li><i class="fa-brands fa-bootstrap text-purple"></i> Bootstrap</li>
+                            <li><i class="fa-solid fa-mobile-screen-button text-green"></i> Responsive Web Design</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2: Database -->
+                    <div class="skills-card fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-database text-blue"></i>
+                            <h3>Database</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fa-solid fa-server"></i> SQLite</li>
+                            <li><i class="fa-solid fa-table"></i> Structured Querying</li>
+                            <li><i class="fa-solid fa-network-wired"></i> Data Modeling</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3: Website Features -->
+                    <div class="skills-card fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-wand-magic-sparkles text-purple"></i>
+                            <h3>Website Features</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fa-brands fa-whatsapp text-green"></i> WhatsApp Integration</li>
+                            <li><i class="fa-brands fa-google text-red"></i> Google Authentication</li>
+                            <li><i class="fa-solid fa-floppy-disk"></i> User Data Storage</li>
+                            <li><i class="fa-solid fa-pager"></i> High-Converting Landing Pages</li>
+                            <li><i class="fa-solid fa-utensils"></i> Interactive Digital Menus</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Mobile-Friendly Design</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4: Tools & Platforms -->
+                    <div class="skills-card fade-in-up" style="animation-delay: 0.3s;">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-toolbox text-orange"></i>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fa-solid fa-code-branch"></i> Visual Studio Code</li>
+                            <li><i class="fa-solid fa-cloud-arrow-up"></i> Netlify Deployment</li>
+                            <li><i class="fa-solid fa-robot"></i> AI-Assisted Development</li>
+                            <li><i class="fa-brands fa-git-alt"></i> Version Control (Git)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section-padding bg-alt">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-tag">What I Offer</span>
+                    <h2 class="section-title">Professional Services</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: Business Website Development -->
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>Business Website Development</h3>
+                        <p>Professional, bespoke websites designed to help local businesses establish a strong online
+                            presence, build customer trust, and showcase service offerings dynamically.</p>
+                        <div class="service-features">
+                            <span><i class="fa-solid fa-check"></i> SEO Ready</span>
+                            <span><i class="fa-solid fa-check"></i> Fast Performance</span>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Restaurant & Café Websites -->
+                    <div class="service-card fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3>Restaurant & Café Websites</h3>
+                        <p>Modern websites featuring interactive, mobile-friendly digital menu solutions. Make it easy
+                            for guests to view dishes, read ingredients, and order effortlessly online.</p>
+                        <div class="service-features">
+                            <span><i class="fa-solid fa-check"></i> QR Menus</span>
+                            <span><i class="fa-solid fa-check"></i> Interactive UI</span>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Tourism & Travel Websites -->
+                    <div class="service-card fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <h3>Tourism & Travel Websites</h3>
+                        <p>Custom-built tourism platforms designed for Hurghada operators, featuring trip showcases,
+                            safari bookings, and direct WhatsApp integrations for quick conversions.</p>
+                        <div class="service-features">
+                            <span><i class="fa-solid fa-check"></i> Booking Forms</span>
+                            <span><i class="fa-solid fa-check"></i> WhatsApp API</span>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Website Deployment & Optimization -->
+                    <div class="service-card fade-in-up" style="animation-delay: 0.3s;">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h3>Website Deployment & Optimization</h3>
+                        <p>Publishing your website to rapid CDNs like Netlify, custom domain connections, performance
+                            audits, and absolute optimization for all mobile devices.</p>
+                        <div class="service-features">
+                            <span><i class="fa-solid fa-check"></i> Netlify Setup</span>
+                            <span><i class="fa-solid fa-check"></i> Speed Audit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-tag">My Portfolio</span>
+                    <h2 class="section-title">Recent Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Teatro Cafe Digital Menu -->
+                    <div class="project-card fade-in-up">
+                        <div class="project-img-wrapper">
+                            <img src="images/teatro_cafe.png" alt="Teatro Café & Lounge Digital Menu"
+                                class="project-img"
+                                onerror="this.src='https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop'">
+                            <div class="project-overlay">
+                                <a href="https://georgegamal111.github.io/Teatro-Cafe" target="_blank" rel="noopener noreferrer"
+                                    class="project-link-btn" aria-label="Visit Teatro Cafe Live Project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Digital Menu</span>
+                                <span>GitHub Pages</span>
+                            </div>
+                            <h3>Teatro Café — Digital Menu</h3>
+                            <p class="project-desc">
+                                An elegant, interactive digital menu for Teatro Café & Lounge. Features a cinematic
+                                dark-theme landing cover, sticky navigation, light/dark mode toggle, and a full
+                                categorized menu spanning hot drinks, juices, cocktails, shisha, and more.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://georgegamal111.github.io/Teatro-Cafe" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project-link">
+                                    <i class="fa-solid fa-globe"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Explore Hurghada -->
+                    <div class="project-card fade-in-up" style="animation-delay: 0.05s;">
+                        <div class="project-img-wrapper">
+                            <img src="images/explore_hurghada.png" alt="Explore Hurghada Tourism Platform"
+                                class="project-img"
+                                onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop'">
+                            <div class="project-overlay">
+                                <a href="https://kevin-samara.github.io/explore-hurghada" target="_blank" rel="noopener noreferrer"
+                                    class="project-link-btn" aria-label="Visit Live Project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                                <span>GitHub Pages</span>
+                            </div>
+                            <h3>Explore Hurghada</h3>
+                            <p class="project-desc">
+                                A tourism platform designed to showcase trips, tours, and activities available in
+                                Hurghada. Visitors can explore experiences and book directly through integrated WhatsApp
+                                chat flows.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://kevin-samara.github.io/explore-hurghada" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project-link">
+                                    <i class="fa-solid fa-globe"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Smart Coach -->
+                    <div class="project-card fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="project-img-wrapper">
+                            <img src="images/smart_coach.png" alt="Smart Coach Fitness App" class="project-img"
+                                onerror="this.src='https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop'">
+                            <div class="project-overlay">
+                                <a href="https://your-smart-coach.netlify.app" target="_blank" rel="noopener noreferrer"
+                                    class="project-link-btn" aria-label="Visit Live Project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Auth</span>
+                                <span>Database</span>
+                                <span>Netlify</span>
+                            </div>
+                            <h3>Smart Coach</h3>
+                            <p class="project-desc">
+                                A fitness and calorie tracking platform helping users calculate daily calorie
+                                requirements based on metrics and goals. Includes secure accounts, cloud/local data
+                                storage, and interactive tracking.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://your-smart-coach.netlify.app" target="_blank" rel="noopener noreferrer"
+                                    class="btn-project-link">
+                                    <i class="fa-solid fa-globe"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (Placeholder): E-Menu Pro -->
+                    <div class="project-card placeholder-project fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="project-img-wrapper">
+                            <img src="images/emenu_pro.png" alt="E-Menu Pro Dashboard" class="project-img"
+                                onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop'">
+                            <div class="project-badge-status">In Progress</div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Vanilla JS</span>
+                                <span>QR Code</span>
+                            </div>
+                            <h3>E-Menu Pro</h3>
+                            <p class="project-desc">
+                                A contactless digital menu solution for restaurants and cafés with interactive dishes,
+                                live categories, allergy filters, and instant WhatsApp order summaries.
+                            </p>
+                            <span class="project-status-text"><i class="fa-solid fa-hourglass-half"></i> Releasing
+                                Soon</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 (Placeholder): Local Biz Landing -->
+                    <div class="project-card placeholder-project fade-in-up" style="animation-delay: 0.3s;">
+                        <div class="project-img-wrapper flex-center-placeholder">
+                            <div class="placeholder-icon-visual">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div class="project-badge-status">Upcoming</div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>CSS Grid</span>
+                                <span>SEO Systems</span>
+                                <span>Optimizations</span>
+                            </div>
+                            <h3>Local Biz Express</h3>
+                            <p class="project-desc">
+                                High-performance landing page framework crafted specifically for local Egyptian service
+                                providers, optimized for 100% PageSpeed scores and direct leads.
+                            </p>
+                            <span class="project-status-text"><i class="fa-solid fa-compass"></i> Conceptual
+                                Phase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Objective / Core Focus Section -->
+        <section class="career-objective section-padding bg-gradient">
+            <div class="container">
+                <div class="objective-box fade-in-up">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <h2 class="objective-heading">Career Objective</h2>
+                    <blockquote class="objective-text">
+                        "My objective is to build a successful freelance web development career by helping businesses
+                        create professional websites that strengthen their online presence, improve customer engagement,
+                        and attract more clients."
+                    </blockquote>
+                    <div class="objective-author">
+                        <span class="author-name">Kevin Samara Saeed Wasef</span>
+                        <span class="author-title">Computer Science Student & Freelancer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section-padding bg-alt">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-tag">My Journey</span>
+                    <h2 class="section-title">Work & Education Timeline</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Freelance Web Developer</h3>
+                                <span class="timeline-institution"><i class="fa-solid fa-briefcase"></i>
+                                    Self-Employed</span>
+                            </div>
+                            <ul class="timeline-highlights">
+                                <li>Developed highly responsive, modern business and service websites for local brands.
+                                </li>
+                                <li>Built full-fledged tourism and fitness web applications utilizing clean semantic
+                                    structures.</li>
+                                <li>Integrated secure WhatsApp booking systems allowing client-customer conversions in
+                                    seconds.</li>
+                                <li>Deployed and hosted projects seamlessly using Netlify and other modern cloud
+                                    providers.</li>
+                                <li>Utilized advanced AI-assisted development tools to accelerate project delivery
+                                    cycles.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - Present</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Computer Science & AI Student</h3>
+                                <span class="timeline-institution"><i class="fa-solid fa-university"></i> Qena National
+                                    University</span>
+                            </div>
+                            <ul class="timeline-highlights">
+                                <li>Studying core principles of software engineering, artificial intelligence,
+                                    algorithms, and databases.</li>
+                                <li>Building practical, real-world web applications to consolidate academic coding
+                                    theories.</li>
+                                <li>Continuously improving development workflows, clean coding patterns, and UX
+                                    sensibilities.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Information -->
+                    <div class="contact-info-wrapper fade-in-left">
+                        <h3 class="contact-grid-title">Contact Information</h3>
+                        <p class="contact-grid-desc">
+                            Have an upcoming project, want to launch a website for your restaurant or tour booking
+                            business, or just want to connect? Reach out using any of the channels below.
+                        </p>
+
+                        <div class="contact-details-list">
+                            <!-- Email -->
+                            <a href="mailto:kevensamara4@gmail.com" class="contact-info-card">
+                                <div class="info-card-icon bg-red-trans">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="info-card-text">
+                                    <h4>Email Me</h4>
+                                    <span>kevensamara4@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/201206821203" target="_blank" rel="noopener noreferrer"
+                                class="contact-info-card">
+                                <div class="info-card-icon bg-green-trans">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="info-card-text">
+                                    <h4>WhatsApp</h4>
+                                    <span>+20 120 682 1203</span>
+                                </div>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/keven-samara-710866350" target="_blank"
+                                rel="noopener noreferrer" class="contact-info-card">
+                                <div class="info-card-icon bg-blue-trans">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="info-card-text">
+                                    <h4>LinkedIn</h4>
+                                    <span>Kevin Samara</span>
+                                </div>
+                            </a>
+
+                            <!-- Location -->
+                            <div class="contact-info-card">
+                                <div class="info-card-icon bg-orange-trans">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <div class="info-card-text">
+                                    <h4>Location</h4>
+                                    <span>Hurghada, Egypt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-wrapper fade-in-right">
+                        <h3 class="contact-grid-title">Send a Message</h3>
+
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="formName">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="formName" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formEmail">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="formEmail" name="email" placeholder="john@example.com"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formSubject">Subject <span class="required">*</span></label>
+                                <input type="text" id="formSubject" name="subject" placeholder="Project Inquiry"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formMessage">Your Message <span class="required">*</span></label>
+                                <textarea id="formMessage" name="message" rows="5"
+                                    placeholder="Tell me details about your project, timeline, and goals..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#home" class="logo">
+                    <span class="logo-accent">&lt;</span>Kevin<span class="logo-accent">.S /&gt;</span>
+                </a>
+                <p class="footer-tagline">Crafting modern digital solutions for local & global businesses.</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="mailto:kevensamara4@gmail.com" aria-label="Email Address" class="social-icon"><i
+                        class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/201206821203" target="_blank" rel="noopener noreferrer"
+                    aria-label="WhatsApp Chat" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/keven-samara-710866350" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn Profile" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub Profile (Placeholder)" class="social-icon"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook Profile (Placeholder)" class="social-icon"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Kevin Samara Saeed Wasef. All Rights Reserved.</p>
+                <a href="#home" class="back-to-top" id="backToTop" aria-label="Scroll to top of page">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
